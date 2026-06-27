@@ -1,0 +1,131 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribución / empaquetado
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Instalación de dependencias (PyInstaller)
+*.manifest
+*.spec
+
+# Logs
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Pruebas / Cobertura de código
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Traducciones
+*.mo
+*.pot
+
+# Django (si aplica, por si acaso)
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask (si aplica)
+instance/
+
+# Scrapy
+.scrapy
+
+# Sphinx (Documentación)
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+# Según las buenas prácticas, Pipfile.lock debe ser rastreado, pero Pipfile no necesariamente.
+# Omitimos esto a menos que se use pipenv explícitamente.
+
+# pdm
+.pdm-python
+.pdm-build/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# Entornos virtuales de conda
+.conda_envs/
+
+# IDEs y Editores de código
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.pydevproject
+.settings/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Variables de entorno y secretos (¡Muy importante para FastAPI!)
+.env
+.env.*
+!.env.example
+secrets.json

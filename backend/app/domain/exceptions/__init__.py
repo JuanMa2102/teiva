@@ -1,3 +1,5 @@
+"""Definición de excepciones del dominio de la aplicación."""
+
 class DomainException(Exception):
     """Excepción base para todos los errores de la capa de dominio."""
     def __init__(self, message: str):
