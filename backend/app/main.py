@@ -5,8 +5,9 @@ y registra todas las rutas de la API.
 """
 
 from fastapi import FastAPI
-from app.api.v1.endpoints.auth import router as auth_router
 from app.api.middlewares.tenant_context_middleware import TenantContextMiddleware
+from app.api.v1.endpoints.auth import router as auth_router
+from app.api.v1.endpoints.crm import router as crm_router
 
 app = FastAPI(
     title="Teiva API",
@@ -17,6 +18,7 @@ app = FastAPI(
 app.add_middleware(TenantContextMiddleware)
 
 app.include_router(auth_router, prefix="/api/v1")
+app.include_router(crm_router, prefix="/api/v1")
 
 @app.get("/")
 async def root():

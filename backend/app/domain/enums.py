@@ -48,3 +48,31 @@ class TenantStatus(str, Enum):
     TRIALING = "trialing"
     PAST_DUE = "past_due"
     CANCELLED = "cancelled"
+
+class ClientStatus(str, Enum):
+    """
+    Enum para representar los estados de un cliente.
+
+    Estados disponibles:
+    - PROSPECTO: Lead
+    - CONTACTADO: Follow-up realizado
+    - COTIZANDO: Propuesta en proceso
+    - CLIENTE_ACTIVO: Póliza vigente
+    - INACTIVO: Sin póliza vigente o perdido
+    """
+    PROSPECTO = "Prospecto"
+    CONTACTADO = "Contactado"
+    COTIZANDO = "Cotizando"
+    CLIENTE_ACTIVO = "Cliente Activo"
+    INACTIVO = "Inactivo"
+
+class PersonType(str, Enum):
+    """
+    Enum para representar el tipo de persona.
+
+    Tipos disponibles:
+    - FISICA: Persona física
+    - MORAL: Persona moral
+    """
+    FISICA = "Física"
+    MORAL = "Moral"
